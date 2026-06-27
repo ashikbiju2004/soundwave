@@ -1,0 +1,27 @@
+{
+  "name": "SoundWave",
+  "short_name": "SoundWave",
+  "description": "Your personal Spotify-like music player — upload, organize and listen.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#1DB954",
+  "orientation": "any",
+  "lang": "en",
+  "categories": ["music", "entertainment"],
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any maskable" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Search Music",  "short_name": "Search", "url": "/?view=search", "description": "Search your library" },
+    { "name": "Liked Songs",   "short_name": "Liked",  "url": "/?view=liked",  "description": "View liked songs"   }
+  ],
+  "screenshots": [],
+  "share_target": {
+    "action": "/",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": { "files": [{ "name": "audio", "accept": ["audio/*"] }] }
+  }
+}
